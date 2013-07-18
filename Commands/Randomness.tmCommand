@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/local/bin/ruby -rubygems -wU
+#system('fortune')
+#gem 'succubus'
+require 'succubus'
+
+grammar = Succubus::Grammar.new do
+  add_rule :silly_name, "&lt;title&gt; &lt;adjective&gt;&lt;noun&gt;"
+  add_rule :title, "Mr.", "Mrs.", "Professor", "Little Miss"
+  add_rule :adjective, "&lt;smelladj&gt;", "&lt;colour&gt;", "Smarty"
+  add_rule :smelladj, "Smelly", "Poopy", "Floral"
+  add_rule :colour, "Green", "Purple"
+  add_rule :noun, "pants", "brain", "banana", "nose"
+end
+
+puts grammar.execute(:silly_name)
+# Professor Purplepants</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string></string>
+	<key>name</key>
+	<string>Randomness</string>
+	<key>outputCaret</key>
+	<string>selectOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>atCaret</string>
+	<key>uuid</key>
+	<string>ADC3B889-9534-46C4-B876-A89BA18DAD56</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
