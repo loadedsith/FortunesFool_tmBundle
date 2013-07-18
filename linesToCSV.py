@@ -1,6 +1,6 @@
 import csv
 
-txt_file = r"adjactives.txt"
+txt_file = r"animals.txt"
 
 # use 'with' if the program isn't going to immediately terminate
 # so you don't leave files open
@@ -12,7 +12,7 @@ in_txt = open(txt_file, "r")
 string = ""
 for line in in_txt:
     line = line.rstrip('\n')
-    string += "'"+line+"', "
+    string += '"'+line+'", '
 #wr = csv.writer( in_txt, quoting=csv.QUOTE_ALL)
 
 
