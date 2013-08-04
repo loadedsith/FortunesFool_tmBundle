@@ -6,7 +6,7 @@ Its evolved a bit and now there are a CSS and SASS versions which pull random, v
 
 I'm actually using them a lot, and I seem to be able to differentiate larger number of these random messages and colors, though I'm not sure this is a good thing, and I try to keep it to a minimum.
 
-####Some sample <Debug Messages>:
+####Some sample Debug Messages:
 
  * Smarty black mamba
  * naughty gray fox
@@ -18,25 +18,29 @@ I'm actually using them a lot, and I seem to be able to differentiate larger num
 
 #### example use:
 
- *  *javascript*: console.log("Red honey bee", this);
- *  *Ruby* : puts "Smarty house mouse"
+#####*javascript*: 
+    console.log("Red honey bee", this);
+     
+##### *Ruby* :
+    puts "Smarty house mouse"
  
-###Some sample <Sass Debug Color Mixins>:
+###Some sample Sass Debug Color Mixin's:
 
- * @include debug(Aqua);
- * @include debug(LightBlue);
- * @include debug(DarkGray);
- * @include debug(MistyRose);
- * @include debug(Crimson);
+ * `@include debug(Aqua);`
+ * `@include debug(LightBlue);`
+ * `@include debug(DarkGray);`
+ * `@include debug(MistyRose);`
+ * `@include debug(Crimson);`
 
 ####  example Sass Debug Mixin
-@mixin debug($color){
-  border:3px dotted $color;
-}
 
-### Some sample <Css Debug Color Borders>:
+    @mixin debug($color){
+     border:3px dotted $color;
+    }
 
- * border: 2px dotted LemonChiffon !important;
- * border: 2px dotted Sienna !important;
- * border: 2px dotted LightYellow !important;
- * border: 2px dotted LavenderBlush !important;
+### Some sample Css Debug Color Borders:
+
+ * `border: 2px dotted LemonChiffon !important;`
+ * `border: 2px dotted Sienna !important;`
+ * `border: 2px dotted LightYellow !important;`
+ * `border: 2px dotted LavenderBlush !important;`
