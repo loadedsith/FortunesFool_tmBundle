@@ -2,8 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/local/bin/ruby -rubygems -w
+	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -rubygems -wKU
+# !/usr/local/bin/ruby -rubygems -w
 require 'succubus'
 
 def getRandomColor()
@@ -20,15 +23,23 @@ puts "border: 2px dotted "+ grammar.execute(:color)+" !important;"
 </string>
 	<key>input</key>
 	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string></string>
 	<key>name</key>
 	<string>Insert CSS Debug Border</string>
+	<key>outputCaret</key>
+	<string>selectOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
 	<key>outputLocation</key>
 	<string>replaceSelection</string>
 	<key>scope</key>
 	<string>source.css</string>
 	<key>uuid</key>
 	<string>BDF77C1F-33DB-48DE-95F5-37F459CB97EA</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
