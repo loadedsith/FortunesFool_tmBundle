@@ -36,7 +36,7 @@ puts "@include debug("+ grammar.execute(:color)+");"
 	<key>outputLocation</key>
 	<string>replaceSelection</string>
 	<key>scope</key>
-	<string>source.scss</string>
+	<string>source.scss, source.css</string>
 	<key>uuid</key>
 	<string>B723B61B-BBD5-4C49-9E36-B6482FB064DF</string>
 	<key>version</key>
