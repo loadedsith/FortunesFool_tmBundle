@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>changed</key>
+	<dict>
+		<key>command</key>
+		<string>#!/usr/local/bin/ruby -rubygems -wU
+#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -wKU
+
+puts "@mixin debug($color){
+  border:3px dotted $color !important;
+}"
+
+
+
+
+
+
+</string>
+	</dict>
+	<key>isDelta</key>
+	<true/>
+	<key>uuid</key>
+	<string>6A868C9A-E67E-447F-972F-7DD81B6AC734</string>
+</dict>
+</plist>

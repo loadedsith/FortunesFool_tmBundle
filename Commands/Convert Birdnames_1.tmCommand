@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -wKU
+
+Birds = {
+  'Mallard'       =&gt; 'BA',
+  'Redshank'      =&gt; 'MA',
+  'Ringed Plover' =&gt; 'RK',
+  'Turnstone'     =&gt; 'RP',  
+}
+
+regexp = Regexp.new('\b(' + Birds.keys.join('|') + ')\b')
+STDOUT &lt;&lt; STDIN.read.gsub(regexp) { |m| Birds[m] }
+</string>
+	<key>keyEquivalent</key>
+	<string></string>
+	<key>name</key>
+	<string>Convert Birdnames</string>
+	<key>outputCaret</key>
+	<string>interpolateByLine</string>
+	<key>uuid</key>
+	<string>D3F9AE87-7043-4B2C-9A1A-51968AC5E8B8</string>
+</dict>
+</plist>

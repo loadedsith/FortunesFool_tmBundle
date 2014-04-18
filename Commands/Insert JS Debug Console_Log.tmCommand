@@ -2,11 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>beforeRunningCommand</key>
-	<string>nop</string>
-	<key>command</key>
-	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -rubygems -wKU
-#!/usr/local/bin/ruby -rubygems -wU
+	<key>changed</key>
+	<dict>
+		<key>command</key>
+		<string>#!/usr/local/bin/ruby -rubygems -wUK
+##!/usr/local/bin/ruby
+##!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -rubygems -wKU
 #system('fortune')
 #gem 'succubus'
 require 'succubus'
@@ -39,6 +40,18 @@ print "console.log('${1:"+ grammar.execute(:silly_name)+"}',${2:''});"</string>
 	<string>atCaret</string>
 	<key>scope</key>
 	<string>source.js</string>
+
+selected = ENV['TM_SELECTED_TEXT']
+if selected.nil?
+  print "console.log('${1:"+ grammar.execute(:silly_name) + "}'${2:, ${100:$1}});"
+else
+  print "console.log('${1:"+ selected + "}'${2:, ${100:$1}});\n"
+end
+
+</string>
+		<key>outputFormat</key>
+		<string>snippet</string>
+	</dict>
 	<key>uuid</key>
 	<string>00654903-2DA6-40EB-9468-30C44ED75C38</string>
 	<key>version</key>

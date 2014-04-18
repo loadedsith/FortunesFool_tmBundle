@@ -7,6 +7,11 @@
 	<key>command</key>
 	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -rubygems -wKU
 #!/usr/local/bin/ruby -rubygems -w
+	<key>changed</key>
+	<dict>
+		<key>command</key>
+		<string>#!/usr/local/bin/ruby -rubygems -wU
+#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -rubygems -wKU
 require 'succubus'
 
 def getRandomColor()
@@ -37,6 +42,9 @@ puts "@include debugBackground("+ grammar.execute(:color)+");"
 	<string>replaceSelection</string>
 	<key>scope</key>
 	<string>source.scss, source.css</string>
+	</dict>
+	<key>isDelta</key>
+	<true/>
 	<key>uuid</key>
 	<string>AF4FF95E-4AFF-421E-AB53-A8D3B6BEE1D7</string>
 	<key>version</key>
